@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    "types": [
+      "Node",
+      "react",
+      "vite/client",
+      "vitest/globals",
+      "react-dom",
+      "react/next",
+      "@testing-library/jest-dom",
+    ],
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": [
+      "ES6",
+      "DOM.Iterable",
+      "DOM",
+      "ESNext"
+    ],
+    "sourceMap": true,
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "noImplicitReturns": true,
+    "strict": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    "allowJs": false,
+    "skipLibCheck": false,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "baseUrl": "src",
+    "typeRoots": [
+      "@types"
+    ],
+    "paths": {
+      "~/Core/*": [
+        "../src/Core/*"
+      ],
+      "~/Models/*": [
+        "../src/Models/*"
+      ],
+      "~/API/*": [
+        "../src/API/*"
+      ],
+      "~/Assets/*": [
+        "../src/Assets/*"
+      ],
+      "~/Pages/*": [
+        "../src/Pages/*"
+      ],
+    }
+  },
+  "include": [
+    "src",
+    "vite-env.d.ts"
+, "Tests/setup.ts"  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "**/*.spec.ts",
+    "dist"
+  ]
+}
