@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-
+import Files from '../dataExample.js'
+import Directory from './Components/Directory.tsx'
 
 const App = () => {
   return (
-    <p>
-      test
-    </p>
+    <main>
+      <Directory files={Files} />
+    </main>
   )
 }
 
