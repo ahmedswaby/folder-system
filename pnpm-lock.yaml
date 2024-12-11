@@ -46,7 +46,7 @@ importers:
         specifier: ^4.0.4
         version: 4.0.4(rollup@2.79.2)
       '@testing-library/jest-dom':
-        specifier: ^6.4.2
+        specifier: ^6.5.0
         version: 6.5.0
       '@testing-library/react':
         specifier: 15.0.6
