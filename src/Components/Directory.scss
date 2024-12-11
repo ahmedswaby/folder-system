@@ -21,19 +21,21 @@ main {
 .btn {
     background-color: transparent;
     border: none;
-    padding: 5px 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
     color: #FFF;
     cursor: pointer;
     display: flex;
     align-items: center;
+    &.folder , &.file {
+        padding: 5px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
     &.folder {
         font-size: 20px;
         font-weight: 600;
         color: #007acc;
     }
-    & + .btn {
+    & + .btn.folder {
         margin-inline-start: 20px;
     }
     &.file {
@@ -56,6 +58,11 @@ main {
 }
 
 [data-collapsed='true'] {
+    & > .btn.folder {
+        font-weight: bold;
+        font-size: 22px;
+        opacity: 0.5;
+    }
     .root , .file {
         display: none;
         overflow: hidden;
@@ -67,5 +74,13 @@ main {
     color: #Fff;
     &.show {
         display: flex;
+    }
+}
+
+.action_wrapper {
+    display: flex;
+    margin-inline-start: 20px;
+    .btn {
+        padding: 0;
     }
 }
