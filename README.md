@@ -5,6 +5,16 @@
 - Build a file explorer like VS Code sidebar component with React, TS, CSS with no external library.
 
 
+## 🛠 Build and Test
+ - [pnpm](https://pnpm.io/) please run if it's not installed on your machine: (npm install -g pnpm)
+
+    then run: pnpm install
+
+    now everything should be installed fine:
+
+    run pnpm start to start the server
+
+
 ## 🛠 Requirements 
 - Should use this sort of data to render the files with icons (optional: use SVG icons from Web).
 - Folders should be expandable, When you left click on a file, it should have some
